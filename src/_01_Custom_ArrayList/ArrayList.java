@@ -3,13 +3,16 @@ package _01_Custom_ArrayList;
 @SuppressWarnings("unchecked")
 
 public class ArrayList <T>{
-	
+	T[] h;
 	public ArrayList() {
+		h = (T[])new Object[0];
 	}
 	
 	public T get(int loc) throws IndexOutOfBoundsException {
-		
-		return null;
+		if(loc>=h.length&&loc<=h.length) {
+			throw new IndexOutOfBoundsException();
+		}
+		return h[loc];
 	}
 	
 	public void add(T val) {
@@ -31,5 +34,10 @@ public class ArrayList <T>{
 	public boolean contains(T val) {
 		
 		return false;
+	}
+
+	public int size() {
+		// TODO Auto-generated method stub
+		return h.length;
 	}
 }
