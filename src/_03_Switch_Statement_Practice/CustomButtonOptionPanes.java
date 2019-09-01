@@ -10,8 +10,30 @@ public class CustomButtonOptionPanes {
 				options, 0);
 
 		String choice = options[input];
-		
+		System.out.println(input);
 		//use a switch statement to do something cool for each option
-		
+		switch(input) {
+		case 6:
+			JOptionPane.showMessageDialog(null, "Have fun with your friends!");
+			break;
+		case 5:
+			JOptionPane.showMessageDialog(null, "Relax!");
+			break;
+		case 4:
+			JOptionPane.showMessageDialog(null, "Do your homework and study!");
+			break;
+		case 3:
+			JOptionPane.showMessageDialog(null, "Study!");
+			break;
+		case 2:
+			JOptionPane.showMessageDialog(null, "Eat tacos!");
+			break;
+		case 1:
+			JOptionPane.showMessageDialog(null, "Do homework!");
+			break;
+		case 0:
+			JOptionPane.showMessageDialog(null, "Watch football!");
+			break;
+		}	
 	}
 }
